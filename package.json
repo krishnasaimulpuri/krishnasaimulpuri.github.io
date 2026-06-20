@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "Personal portfolio website",
-  "homepage": "https://ksmulpuri.github.io/mulpuri.io",
+  "homepage": "https://krishnasaimulpuri.github.io",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",

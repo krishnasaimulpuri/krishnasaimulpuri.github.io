@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
           <FooterLink href="https://www.linkedin.com/in/mulpk/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={18} />
           </FooterLink>
-          <FooterLink href="https://github.com/ksmulpuri" target="_blank" rel="noopener noreferrer">
+          <FooterLink href="https://github.com/krishnasaimulpuri" target="_blank" rel="noopener noreferrer">
             <FaGithub size={18} />
           </FooterLink>
           <FooterLink href="mailto:krishnasaimulpuri@gmail.com">

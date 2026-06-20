@@ -191,7 +191,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Full Stack Developer &middot; Cloud Infrastructure &middot; Distributed Systems
+          Distributed Systems &middot; Observability &middot; AI-Assisted Engineering
         </TagLine>
         <SocialLinks
           initial={{ opacity: 0, y: 20 }}
@@ -208,7 +208,7 @@ const Hero: React.FC = () => {
             <FaLinkedin size={20} />
           </SocialLink>
           <SocialLink
-            href="https://github.com/ksmulpuri"
+            href="https://github.com/krishnasaimulpuri"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}

@@ -206,13 +206,14 @@ const About: React.FC = () => {
           viewport={{ once: true }}
         >
           <p>
-            Senior Software Engineer with over 10 years of experience building enterprise-level applications.
-            I specialize in Java development, cloud technologies, and scalable distributed systems,
-            having contributed at Oracle, Cisco Systems, and Pegasystems.
+            Senior Software Engineer with 10+ years building scalable distributed systems, observability
+            platforms, and cloud infrastructure. Deep expertise across Oracle, Cisco, and Pegasystems using
+            Java, Go, Terraform, OCI, and OpenSearch.
           </p>
           <p>
-            I'm passionate about solving complex technical challenges and building robust,
-            high-performance systems that make a real impact.
+            Proficient in AI-assisted engineering workflows — OpenAI Codex and LLM integration for developer
+            tooling. Track record of leading platform-wide initiatives, mentoring engineers, and driving
+            architectural decisions at scale while defining engineering standards adopted across product teams.
           </p>
         </AboutText>
 
@@ -246,30 +247,70 @@ const About: React.FC = () => {
               <SkillTags>
                 <SkillTag>Java</SkillTag>
                 <SkillTag>Python</SkillTag>
-                <SkillTag>JavaScript</SkillTag>
-                <SkillTag>C</SkillTag>
-                <SkillTag>C++</SkillTag>
+                <SkillTag>Go</SkillTag>
               </SkillTags>
             </SkillCategory>
             <SkillCategory variants={itemVariants}>
-              <SkillTitle>Cloud & DevOps</SkillTitle>
+              <SkillTitle>AI & LLM Tools</SkillTitle>
               <SkillTags>
-                <SkillTag>OCI</SkillTag>
+                <SkillTag>OpenAI Codex</SkillTag>
+                <SkillTag>Claude</SkillTag>
+                <SkillTag>LLM API Integration</SkillTag>
+                <SkillTag>Prompt Engineering</SkillTag>
+                <SkillTag>AI Code Review Pipelines</SkillTag>
+              </SkillTags>
+            </SkillCategory>
+            <SkillCategory variants={itemVariants}>
+              <SkillTitle>Cloud & Infra</SkillTitle>
+              <SkillTags>
+                <SkillTag>Oracle Cloud (OCI)</SkillTag>
+                <SkillTag>Terraform</SkillTag>
                 <SkillTag>Docker</SkillTag>
                 <SkillTag>Kubernetes</SkillTag>
-                <SkillTag>Terraform</SkillTag>
-                <SkillTag>SaltStack</SkillTag>
               </SkillTags>
             </SkillCategory>
             <SkillCategory variants={itemVariants}>
-              <SkillTitle>Frameworks & Tools</SkillTitle>
+              <SkillTitle>Observability</SkillTitle>
               <SkillTags>
-                <SkillTag>Spring Boot</SkillTag>
-                <SkillTag>React</SkillTag>
-                <SkillTag>Node.js</SkillTag>
-                <SkillTag>Oracle</SkillTag>
+                <SkillTag>Jaeger</SkillTag>
+                <SkillTag>Distributed Tracing</SkillTag>
+                <SkillTag>OpenTelemetry</SkillTag>
+              </SkillTags>
+            </SkillCategory>
+            <SkillCategory variants={itemVariants}>
+              <SkillTitle>Frameworks</SkillTitle>
+              <SkillTags>
+                <SkillTag>Spring</SkillTag>
+                <SkillTag>Dropwizard</SkillTag>
+                <SkillTag>Apache CXF</SkillTag>
                 <SkillTag>Apache Spark</SkillTag>
-                <SkillTag>TeamCity</SkillTag>
+                <SkillTag>ReactJS</SkillTag>
+                <SkillTag>ZeroMQ</SkillTag>
+                <SkillTag>Microservices</SkillTag>
+              </SkillTags>
+            </SkillCategory>
+            <SkillCategory variants={itemVariants}>
+              <SkillTitle>Databases</SkillTitle>
+              <SkillTags>
+                <SkillTag>Oracle</SkillTag>
+                <SkillTag>MySQL</SkillTag>
+                <SkillTag>OpenSearch</SkillTag>
+              </SkillTags>
+            </SkillCategory>
+            <SkillCategory variants={itemVariants}>
+              <SkillTitle>DevOps & CI/CD</SkillTitle>
+              <SkillTags>
+                <SkillTag>Git</SkillTag>
+                <SkillTag>Perforce</SkillTag>
+                <SkillTag>Jenkins</SkillTag>
+                <SkillTag>CI/CD Pipelines</SkillTag>
+              </SkillTags>
+            </SkillCategory>
+            <SkillCategory variants={itemVariants}>
+              <SkillTitle>Performance</SkillTitle>
+              <SkillTags>
+                <SkillTag>YourKit</SkillTag>
+                <SkillTag>JMeter</SkillTag>
               </SkillTags>
             </SkillCategory>
           </SkillsGrid>

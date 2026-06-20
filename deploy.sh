@@ -12,4 +12,4 @@ npm run build
 echo "Deploying to gh-pages..."
 npx gh-pages -d build -f
 
-echo "Done! Site will be live at https://ksmulpuri.github.io/mulpuri.io"
+echo "Done! Site will be live at https://krishnasaimulpuri.github.io"

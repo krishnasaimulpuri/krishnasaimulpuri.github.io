@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my professional experience, technical skills, and projects.
 
-**[View Live Site](https://ksmulpuri.github.io/mulpuri.io/)**
+**[View Live Site](https://krishnasaimulpuri.github.io/)**
 
 ## Built With
 
@@ -16,4 +16,4 @@ Personal portfolio website showcasing my professional experience, technical skil
 
 - **Email:** krishnasaimulpuri@gmail.com
 - **LinkedIn:** [linkedin.com/in/mulpk](https://www.linkedin.com/in/mulpk/)
-- **GitHub:** [github.com/ksmulpuri](https://github.com/ksmulpuri)
+- **GitHub:** [github.com/krishnasaimulpuri](https://github.com/krishnasaimulpuri)

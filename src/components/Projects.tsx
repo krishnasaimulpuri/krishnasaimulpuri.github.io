@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FaCode, FaGlobe } from 'react-icons/fa';
 
 const ProjectsSection = styled.section`
   padding: 100px 50px;
@@ -180,93 +179,6 @@ const ExperienceDescription = styled.div`
   }
 `;
 
-const AcademicSection = styled.div`
-  margin-top: 80px;
-`;
-
-const ProjectsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-`;
-
-const ProjectCard = styled(motion.div)`
-  background: ${props => props.theme.cardBackground};
-  border: 1px solid ${props => props.theme.border};
-  border-radius: 12px;
-  padding: 28px;
-  transition: all 0.2s ease;
-
-  &:hover {
-    border-color: ${props => props.theme.primary};
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-    transform: translateY(-2px);
-  }
-`;
-
-const ProjectIcon = styled.div`
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: ${props => props.theme.sectionAlt};
-  color: ${props => props.theme.primary};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-`;
-
-const ProjectTitle = styled.h3`
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: ${props => props.theme.text};
-  margin-bottom: 12px;
-`;
-
-const ProjectDescription = styled.div`
-  color: ${props => props.theme.secondary};
-  line-height: 1.7;
-  font-size: 0.95rem;
-  margin-bottom: 16px;
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 10px;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: ${props => props.theme.primary};
-      opacity: 0.6;
-    }
-  }
-`;
-
-const ProjectTags = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-`;
-
-const ProjectTag = styled.span`
-  font-size: 0.8rem;
-  color: ${props => props.theme.primary};
-  background: ${props => props.theme.sectionAlt};
-  padding: 4px 12px;
-  border-radius: 6px;
-  font-weight: 600;
-`;
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -304,7 +216,7 @@ const Projects: React.FC = () => {
             <ExperienceCard>
               <ExperienceHeader>
                 <ExperienceInfo>
-                  <CompanyLogo src={"/mulpuri.io/logos/oracle.svg"} alt="Oracle" />
+                  <CompanyLogo src={"/logos/oracle.svg"} alt="Oracle" />
                   <ExperienceText>
                     <ExperienceTitle>Senior Software Engineer</ExperienceTitle>
                     <ExperienceCompany>Oracle</ExperienceCompany>
@@ -314,12 +226,14 @@ const Projects: React.FC = () => {
               </ExperienceHeader>
               <ExperienceDescription>
                 <ul>
-                  <li>Designed and implemented telemetry and distributed tracing for Oracle NetSuite ERP using Jaeger, providing internal libraries, APIs and guidelines that enhanced observability across the product</li>
-                  <li>Configured and deployed distributed OpenSearch clusters across multiple OCI regions for data availability and performance</li>
-                  <li>Built Control Plane APIs and Scheduled Tasks for managing ad-hoc and recurring tasks programmatically</li>
-                  <li>Redesigned the Anomaly Detection tool with RESTful services, new database schema, ReactJS UI, and SSO integration via OpenID Connect</li>
-                  <li>Added Terraform support for new OCI services and resources in the Terraform Provider for Oracle Cloud Infrastructure</li>
-                  <li>Built Unified Analytics Data Platform for measuring developer adoption using Terraform, Spark Java, and OCI SDKs</li>
+                  <li>Led design and implementation of distributed tracing for Oracle NetSuite ERP using Jaeger; delivered internal libraries, APIs, and developer guidelines that improved platform-wide observability across 100+ microservices.</li>
+                  <li>Deployed and operated distributed OpenSearch clusters across multiple OCI regions (local, regional, global), increasing data availability and query performance for NetSuite ERP at enterprise scale.</li>
+                  <li>Architected and shipped an AI-assisted code review pipeline using OpenAI Codex, reducing manual code inspection time by ~30% and surfacing recurring anti-patterns across the engineering org.</li>
+                  <li>Integrated Codex-powered natural-language query interface into the Anomaly Detection platform, enabling non-technical stakeholders to explore telemetry data without writing custom queries.</li>
+                  <li>Redesigned the Anomaly Detection tool end-to-end: new RESTful APIs, updated database schema, automated data migration from legacy system, and rebuilt the UI in ReactJS with OpenID Connect SSO.</li>
+                  <li>Contributed to the open-source Terraform Provider for OCI — added support for new OCI services and extended existing service resources, coordinating with internal and community stakeholders.</li>
+                  <li>Built a Unified Analytics Data Platform on OCI to track developer adoption and user engagement: pipeline infrastructure (Terraform), business logic (Spark/Java), and a monitoring framework using OCI SDKs.</li>
+                  <li>Developed Control Plane APIs and Scheduled Task services to manage ad-hoc and recurring operational tasks programmatically, improving SRE toil reduction across multiple product teams.</li>
                 </ul>
               </ExperienceDescription>
             </ExperienceCard>
@@ -334,7 +248,7 @@ const Projects: React.FC = () => {
             <ExperienceCard>
               <ExperienceHeader>
                 <ExperienceInfo>
-                  <CompanyLogo src={"/mulpuri.io/logos/cisco.svg"} alt="Cisco" />
+                  <CompanyLogo src={"/logos/cisco.svg"} alt="Cisco" />
                   <ExperienceText>
                     <ExperienceTitle>Software Engineer</ExperienceTitle>
                     <ExperienceCompany>Cisco Systems</ExperienceCompany>
@@ -344,11 +258,11 @@ const Projects: React.FC = () => {
               </ExperienceHeader>
               <ExperienceDescription>
                 <ul>
-                  <li>Designed and implemented a messaging framework using ZeroMQ for Cisco NGFW High Availability communication</li>
-                  <li>Implemented REST APIs for managing firewall operations using Java and Neo4J</li>
-                  <li>Led platform bring-up for Cisco Firepower 1010, 1120, 1140 devices</li>
-                  <li>Analyzed and improved slow-performing firewall components</li>
-                  <li>Built scenario-based automation using Behave framework in Python</li>
+                  <li>Designed and implemented a high-availability messaging framework using ZeroMQ for Cisco NGFW device clustering, handling failover and message delivery guarantees at hardware line rate.</li>
+                  <li>Built REST APIs in Java with a Neo4J backend to manage core firewall operations, supporting the policy model for Firepower NGFW devices.</li>
+                  <li>Contributed to hardware platform bring-up for Firepower 1010, 1120, and 1140 NGFW devices, collaborating across firmware, OS, and application layers.</li>
+                  <li>Profiled and resolved performance bottlenecks in critical firewall components; wrote scenario-based integration tests using the Behave (Python) BDD framework.</li>
+                  <li>Designed traffic reporting algorithms for Cisco NGFW devices using Java and Apache Lucene to generate trend reports from device traffic data.</li>
                 </ul>
               </ExperienceDescription>
             </ExperienceCard>
@@ -363,34 +277,7 @@ const Projects: React.FC = () => {
             <ExperienceCard>
               <ExperienceHeader>
                 <ExperienceInfo>
-                  <CompanyLogo src={"/mulpuri.io/logos/cisco.svg"} alt="Cisco" />
-                  <ExperienceText>
-                    <ExperienceTitle>Software Engineer Intern</ExperienceTitle>
-                    <ExperienceCompany>Cisco Systems</ExperienceCompany>
-                  </ExperienceText>
-                </ExperienceInfo>
-                <ExperienceDate>May 2017 - Dec 2017</ExperienceDate>
-              </ExperienceHeader>
-              <ExperienceDescription>
-                <ul>
-                  <li>Developed the reporting feature for Cisco NGFW devices</li>
-                  <li>Designed algorithms for traffic trend analysis and report generation</li>
-                  <li>Built with Java and Lucene as the backend</li>
-                </ul>
-              </ExperienceDescription>
-            </ExperienceCard>
-          </ExperienceItem>
-
-          <ExperienceItem
-            variants={itemVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <ExperienceCard>
-              <ExperienceHeader>
-                <ExperienceInfo>
-                  <CompanyLogo src={"/mulpuri.io/logos/pega.svg"} alt="Pegasystems" />
+                  <CompanyLogo src={"/logos/pega.svg"} alt="Pegasystems" />
                   <ExperienceText>
                     <ExperienceTitle>Software Engineer</ExperienceTitle>
                     <ExperienceCompany>Pegasystems</ExperienceCompany>
@@ -400,80 +287,14 @@ const Projects: React.FC = () => {
               </ExperienceHeader>
               <ExperienceDescription>
                 <ul>
-                  <li>Built a custom framework on Apache CXF to expose core Pega platform services externally</li>
-                  <li>Implemented Single Sign-On with SAML 2.0 for the Pega product</li>
-                  <li>Integrated OpenCMIS client API for routing attachments to external CMS</li>
-                  <li>Optimized runtime execution and improved product performance</li>
+                  <li>Built a custom Apache CXF framework to expose Pega platform core services via standardized external APIs, adopted across multiple enterprise customer integrations.</li>
+                  <li>Implemented SAML 2.0-based Single Sign-On and integrated the OpenCMIS client API to route document attachments to external Content Management Systems.</li>
+                  <li>Analyzed and improved runtime performance of key product components through profiling and targeted code optimization, reducing p99 latency for core API paths.</li>
                 </ul>
               </ExperienceDescription>
             </ExperienceCard>
           </ExperienceItem>
         </Timeline>
-
-        <AcademicSection>
-          <SectionLabel
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            Projects
-          </SectionLabel>
-          <SectionTitle
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            viewport={{ once: true }}
-          >
-            Academic Experience
-          </SectionTitle>
-
-          <ProjectsGrid>
-            <ProjectCard
-              variants={itemVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              <ProjectIcon><FaCode size={24} /></ProjectIcon>
-              <ProjectTitle>C Compiler</ProjectTitle>
-              <ProjectDescription>
-                <ul>
-                  <li>Developed a C compiler supporting variable declarations, pointers, function definitions, and loops</li>
-                  <li>Used Flex to parse C programs into tokens and added semantics to the grammar using Bison</li>
-                </ul>
-              </ProjectDescription>
-              <ProjectTags>
-                <ProjectTag>C</ProjectTag>
-                <ProjectTag>Flex</ProjectTag>
-                <ProjectTag>Bison</ProjectTag>
-                <ProjectTag>Compilers</ProjectTag>
-              </ProjectTags>
-            </ProjectCard>
-
-            <ProjectCard
-              variants={itemVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              <ProjectIcon><FaGlobe size={24} /></ProjectIcon>
-              <ProjectTitle>Placement Office Website</ProjectTitle>
-              <ProjectDescription>
-                <ul>
-                  <li>Developed a website for Placement Office, Osmania University to streamline campus placement processes</li>
-                  <li>Built with Java, Struts, Hibernate, HTML, CSS, and JavaScript</li>
-                </ul>
-              </ProjectDescription>
-              <ProjectTags>
-                <ProjectTag>Java</ProjectTag>
-                <ProjectTag>Struts</ProjectTag>
-                <ProjectTag>Hibernate</ProjectTag>
-                <ProjectTag>JavaScript</ProjectTag>
-              </ProjectTags>
-            </ProjectCard>
-          </ProjectsGrid>
-        </AcademicSection>
       </ProjectsContent>
     </ProjectsSection>
   );
